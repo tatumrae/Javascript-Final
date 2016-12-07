@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cows and Bulls (Project 2) - Tatum Thomas</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.0/jquery.validate.min.js"></script> 
+<script src="javascript.js"></script>
+<script src="functions.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="wrapper">
+<div id="game">
+<h1>Let's play COWS and BULLS!</h1>
+<div id="rules">In the game of cows and bulls, your goal is to guess a 4-digit random number. Enter one number per box and hit "Guess". Once you guess, the system will update the number of cows and bulls for your guess.<p>
+COW: This means you guessed a correct number, but it's not in the right position of the random number. Move your numbers around within the guess boxes.<br>
+BULL: This means you guessed a correct number, in the correct position!<p>
+Once you guess the correct number, the system will alert you and you can choose "New Game" if you'd like to start a new game. At that time, a new code will be generated for you to guess.<p>
+<center>GOOD LUCK!</center><p></div>
+<div class="box left header">Type your guess below...</div>
+<div class="box right header"><div id="cowsDiv"><img src="./images/cow.jpg" height="49px"></div><div id="bullsDiv"><img src="./images/bull.jpg" height="49px"></div><div id="guessesDiv">Guesses</div></div>
+<div class="box left content"><form id="theForm">
+  <p>
+    <input id="userNumber1" name="userNumber1" type="text"><input id="userNumber2" name="userNumber2" type="text" ><input id="userNumber3" name="userNumber3" type="text"><input id="userNumber4" name="userNumber4" type="text">
+  </p></div>
+<div class="box right content">
+<div id="cowsDiv"><span id="cowsOutput"></span></div>
+<div id="bullsDiv"><span id="bullsOutput"></span></div>
+<div id="guessesDiv"><span id="guessesOutput"></span></div>
+</div>
+
+<div class ="box bottom"><div id="usersOutput">
+  <table id='outputTable'>
+  <colgroup>
+  <col style='width: 5%;'>
+  <col style='width: 45%;'>
+  <col style='width: 25%;'>
+  <col style='width: 25%;'>
+  </colgroup>
+  <tbody>
+    <tr>
+   <th>Guess</th>
+      <th>Your Guess</th>
+      <th>Cows</th>
+      <th>Bulls</th>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+</div>
+<div class="bottomOfPage"><input type="submit" id="submitButton" value="Guess"></form>&nbsp;<button type="button" id="newGameButton">New Game</button></div>
+</div>
+</div> 
+</body>
+</html>

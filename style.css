@@ -1,0 +1,105 @@
+#cowsDiv, #bullsDiv, #guessesDiv {
+ width: 60px;
+ height: 50px;
+ margin-right: 2px;
+ float: left;
+ text-align: center;
+ vertical-align: middle;
+ line-height: 50px;       /* the same as your div height */
+}
+
+#rules, #cowsDiv, #bullsDiv, #guessesDiv, .header {
+ color: #685206;
+ font-family: 'Helvetica Neue', 
+ sans-serif; 
+font-size: 14px;
+}
+
+#wrapper{
+	text-align: center;
+	margin: 20px;
+}
+
+#game{
+    width:600px;
+    position:relative;
+    padding: 3px 3px 3px 3px;
+    clear: both;
+	display: block;
+    height: auto;
+    min-height: 100% !important;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#bottomOfPage {
+	position: absolute;
+	vertical-align: middle;
+
+}
+.box{
+ padding: 3px 3px 3px 3px;
+    position:relative;
+    height:50px;  
+    display: flex;
+    justify-content: center;
+    align-items: center; /* align vertical */
+}
+.bottom {
+ width: 587px;
+ height: auto;
+}
+
+.header{
+border-bottom: 1px solid black;
+padding-bottom: 0px;
+margin-bottom: 0px;
+font-size: 18px;
+}
+
+.left{
+ float: left;
+ left:7px;
+ width: 47%
+}
+
+.right{
+ float: right;
+ right:7px; 
+ width: 47%
+}
+
+input {padding: 3px;
+ margin: 2px;
+ position: inline;
+ border:1px solid grey;
+ width: 20%;
+}
+
+#submitButton, #newGameButton{
+    border: 1px solid black;
+    padding: 2px;
+    width: auto;
+    border-radius: 2px;
+	display: inline;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 587px;
+}
+
+td, th {
+ margin-left: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+td {
+ padding-left: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
