@@ -1,0 +1,177 @@
+header, main, nav, footer, figure, figcaption, aside, section, article {display: block;}
+body {background-color: #4F6D93;
+		color: #666666;
+		font-family: Arial, Helvetica, sans-serif; 
+		background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);
+		background-repeat: no-repeat;}
+header {background-color: #000033;
+		color: #FFFFFF;
+		background-image: url(../SampleMedia/sunset.jpg);
+		background-position: right;
+		background-repeat: no-repeat; 
+		height: 60px;
+		text-align: center;
+		padding-top: 15px;}
+nav {font-weight: bold;
+		padding: 20px;
+		text-align: center;
+		
+		}
+nav ul {list-style-type: none;
+		margin: 0;
+		padding-left: 0;
+		overflow: hidden;
+		font-size: 1.2em;
+		border: 1px solid #e7e7e7;
+		background-color: #f3f3f3;
+		padding-top: .5em;
+		padding-bottom: .5em;
+		width: 50%;
+		}
+nav a { text-decoration: none;
+	}
+nav a:link {color: #000033;}
+nav a:visited {color: #344873;}
+nav a:hover {color: #FFFFFF;}
+nav li {
+	display: inline;
+	border-right: 1px solid #bbb;
+	
+}
+nav li:last-child{
+	border-right: none;
+}
+main {padding-top: 1px;
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 30px;
+		display: block;
+		background-color: #FFFFFF;
+	}
+h1 {margin-bottom: 0;
+	margin-top: 0;}
+h2 {color: #3399CC;
+	text-shadow: 1px 1px 2px #CCCCCC;}
+h1, h2, h3 {font-family: Georgia, "Times New Roman", serif;}
+dt {color: #000033;
+	font-weight: bold;}
+main ul {list-style-image: url(../SampleMedia/marker.gif);
+	list-style-type: disc; }
+table {border: 1px solid #3399CC;
+		width: 80%;
+		border-spacing: 0;}
+td, th {padding: 5px;
+		border: 1px solid #3399CC;}
+td {text-align: center;}
+tr:nth-of-type(odd){background-color: #F5FAFC;}
+.text {text-align: left;}
+label {float: left;
+		display: block;
+		text-align: right;
+		width: 120px;
+		padding-right: 10px;}
+input {display: block;
+		margin-bottom: 20px;}
+textarea { display: block;
+		margin-bottom: 20px;}
+input[type="submit"] {margin-left: 130px;}
+video, embed {float: right; padding-left: 20px;}
+#gallery { position: relative;
+			height: 200px;
+			text-align: left;
+			color: #333333;}
+#gallery ul {list-style-type: none;
+	width: 300px;}
+#gallery li {display: inline;
+	float: left;
+	padding: 10px;}
+#gallery img { border-style: none;}
+#gallery a {text-decoration: none;
+			font-style: italic;
+			color: #666666;}
+#gallery span {position: absolute;
+			left: -1000px;
+			opacity: 0;
+			transition: opacity 3s ease-in-out;}
+#gallery a:hover span {
+		position: absolute;
+		top: 16px;
+		left: 320px;
+		text-align: center;
+		opacity: 1;
+}
+figure { position: absolute;
+		left: 280px;
+		text-align: center;
+		opacity: .25;
+		}
+footer {font-size: 75%; 
+		font-style: italic; 
+		text-align: center; 
+		font-family: Georgia, "Times New Roman", serif;
+		padding: 20px;
+		background-color: #FFFFFF;
+		float: none;}
+.resort {color: #5C7FA3;
+	font-weight: bold; }
+#contact {font-size: 90%; }
+#wrapper {margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+			background-color: #90C7E3;
+			min-width: 960px;
+			max-width: 2048px;
+			box-shadow: 3px 3px 3px #333333;}
+#homehero {background-image: url(../SampleMedia/coasthero.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			height: 300px;
+			margin-left: 190px;}
+#yurthero {background-image: url(../SampleMedia/yurthero.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			height: 300px;
+			margin-left: 190px;}
+#trailhero {background-image: url(../SampleMedia/trailhero.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			height: 300px;
+			margin-left: 190px;}
+#mobile {display: none;}
+#desktop {display: inline;}
+@media only screen and (max-width: 64em) {
+	body {margin: 0;
+		background-color: #FFFFFF;}
+	#wrapper {min-width: 0;
+			width: auto;
+			box-shadow: none;}
+	main {margin-left: 0;}
+	nav { float: none;
+		width: auto;
+		text-align: center;
+		padding: 0.5em;}
+	nav li {display: inline;
+			padding: 0.25em 0.75em;}
+	#homehero, #yurthero, #trailhero {margin-left: 0; height: 200px;}
+	footer {margin-left: 0;}	
+}
+@media only screen and (max-width: 37.75em) {
+	#header { padding-top: 1em;}
+	main {padding: .1em 1em;
+			font-size: 90%;}
+	h1 { font-size: 1.5em;}
+	nav { padding: 0;}
+	nav li { display: block;
+			margin: 0;
+			border-bottom: 2px solid #330000;}
+	nav a {display: block;}
+	label {float: none;
+			text-align: left;}
+	input[type="submit"]
+			{margin-left: 0;}
+	#homehero, #yurthero, #trailhero { background-image: none;
+			height: 0;}
+	#mobile {display: inline;}
+	#desktop { display: none;}
+	#gallery img{display: none;}
+}
